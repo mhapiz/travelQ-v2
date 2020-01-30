@@ -1,0 +1,818 @@
+@media (min-width: 576px) {
+    //----------------------------
+
+    nav {
+        background: none;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 9;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        font-size: 1.1rem;
+
+        button {
+            background: rgba($color: #000000, $alpha: 0.6) !important;
+            color: wheat !important;
+
+            span {
+                background: #000 !important;
+                color: white !important;
+            }
+        }
+
+        a {
+            color: $notSoWhite !important;
+
+            &:hover {
+                color: #f2f2f2 !important;
+                text-shadow: 2px 3px 5px #505050;
+            }
+        }
+
+        .active {
+            font-weight: 700;
+            text-shadow: 2px 3px 5px #505050;
+        }
+    }
+
+    .navbar-sc {
+        position: fixed !important;
+        top: 0;
+        padding-left: 200px;
+        padding-right: 200px;
+        background: $kindaGrey;
+        padding-top: 0;
+        padding-bottom: 0;
+        color: $notSoBlack !important;
+
+        a {
+            color: $notSoBlack !important;
+
+            &:hover {
+                color: $nightBlue !important;
+                text-shadow: 2px 3px 5px #505050;
+            }
+        }
+
+        .btn-login {
+            color: $notSoWhite !important;
+            height: 45px;
+            width: 80px;
+            background: $myBlue;
+            border-radius: 0;
+        }
+    }
+
+    .btn-login {
+        height: 40px;
+        width: 80px;
+        background: $myBlue;
+        color: $notSoWhite;
+    }
+
+    /* HOME PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    body {
+        header.onIndex {
+            font-family: $secFont;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: rgba($color: #0f0f0f, $alpha: 0.5);
+            }
+
+            .intro {
+                position: relative;
+                z-index: 5;
+                height: 300px;
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: $notSoWhite;
+
+                h3 {
+                    text-align: center;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    main.home {
+        section {
+            margin: 100px 0px;
+        }
+
+        //----------------------
+        section.travel-package {
+            .destination {
+                height: 80vh;
+                display: flex;
+            }
+
+            .dest {
+                display: flex;
+                justify-content: end;
+                align-items: flex-end;
+
+                color: $notSoWhite;
+
+                .text {
+                    transition: all .3s ease-in-out;
+                    width: 100%;
+                    text-align: center;
+
+
+                    h4,
+                    p {
+                        transition: all .3s ease-in-out;
+
+                    }
+                }
+
+                &:hover {
+                    .text {
+                        background: rgba($color: #0f0f0f, $alpha: 0.5);
+
+                        h4,
+                        p {
+
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            .left {
+                width: 60%;
+                height: 100%;
+
+                .left1 {
+                    height: 100%;
+                    width: 100%;
+                    background-size: cover !important;
+                    background-position: center center;
+                }
+            }
+
+            .right {
+                height: 100%;
+                width: 40%;
+
+                .right1 {
+                    height: 50%;
+                    width: 100%;
+                    background-size: cover !important;
+                    background-position: center center;
+                }
+
+                .right2 {
+                    height: 50%;
+                    width: 100%;
+                    background-size: cover !important;
+                    background-position: center bottom !important;
+                }
+            }
+        }
+
+        //----------------------
+        section.partner {
+            text-align: left;
+
+            .our-partners {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 250px;
+                    margin: 0;
+                }
+            }
+        }
+
+        section.testi {
+            .col-lg-4 {
+                margin: 0 0;
+            }
+
+            .testi-card {
+                border: 2px solid rgb(227, 227, 255);
+                border-radius: 20px;
+                height: 460px;
+                width: 320px;
+                padding: 10px;
+
+                .testi-img {
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .testi-name {}
+
+                .testi-desc {
+                    height: 150px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    /* HOME PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    //-----------######################################################---------
+
+    /* DETAIL PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    main.detail {
+        .block {
+            width: 100%;
+            height: 300px;
+            background: $nightBlue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .breadcrumb {
+            position: relative;
+            z-index: 4;
+            margin-top: 70px;
+            margin-bottom: 40px;
+            background: none !important;
+
+            .breadcrumb-item {
+                a {
+                    color: $notSoWhite;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $myLightBlue;
+                    }
+                }
+            }
+
+            .active {
+                font-weight: 700;
+            }
+        }
+
+        .left-content {
+            .travel-location-country {
+                font-family: $secFont;
+            }
+
+            .gallery {
+                width: 100%;
+
+                .xzoom-container {
+                    display: block;
+
+                    .xzoom {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    .xactive {
+                        border: 3px solid goldenrod;
+                    }
+                }
+
+                .xzoom-thumbs {
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .service {
+                width: 100%;
+                padding: 10px 10px;
+
+                .service-icon {
+                    height: 50px;
+                }
+
+                .service-text {
+                    .service-title {
+                        font-weight: 700;
+                        // font-size: 1.2rem;
+                    }
+
+                    .service-desc {
+                        margin-top: -10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .right-content {
+            margin-top: 0px;
+
+            .trip-info {
+                td {
+                    font-size: 14px;
+                }
+            }
+
+            .btn-book {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 50px;
+                background: $myBlue;
+                color: $notSoWhite;
+                padding-top: 12px;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background: $nightBlue;
+                }
+            }
+        }
+    }
+
+    /* DETAIL PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    /* SUCCESS PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    main.success {
+        section.success-container {
+            width: 100%;
+
+            img {
+                width: auto;
+                height: 500px;
+                margin: 0px 0px;
+            }
+        }
+    }
+
+    /* SUCCESS PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    /* LOGIN PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    main.login {
+        height: 100vh;
+        // padding: 10vh 0;
+
+        .half-bg {
+            height: 100%;
+            width: 400px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-size: cover;
+        }
+
+        .login-gallery-col {
+            display: block;
+
+            .login-gallery {
+                padding: 5px 0px;
+
+                .img-thumb-x {
+                    width: 55%;
+                    height: 200px;
+                    overflow: hidden;
+                    margin: 10px 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+
+                .img-thumb-y {
+                    width: 40%;
+                    height: 600px;
+                    overflow: hidden;
+                    margin: 10px 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+
+                .btn-login {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .login-card {
+            .card {
+                box-shadow: -6px 0px 20px rgb(95, 95, 95);
+            }
+        }
+    }
+
+    /* LOGIN PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    /* REGISTER PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    main.register {
+        .bg-up {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom center;
+            }
+        }
+
+        .bg-down {
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: bottom center;
+            }
+        }
+
+        min-height: 100vh;
+
+        .btn-login {
+            width: auto;
+        }
+    }
+
+    /* REGISTER PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    /* DETAILv2 PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    body {
+        header.hero-detail {
+            height: 95vh;
+            position: relative;
+
+            .owl-carousel {
+                height: 100%;
+                overflow: hidden;
+
+                .item {
+                    height: 95vh;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover !important;
+                        object-position: center center !important;
+                    }
+                }
+            }
+
+            .bg-x {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(#242424, 0.5) !important;
+                z-index: 2;
+            }
+
+            .header-content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: $notSoWhite;
+                width: 100%;
+                z-index: 3;
+
+                .about-trip {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 5px 10px;
+
+                    i {
+                        font-size: 4rem;
+                    }
+
+                    .detail {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+
+        main.detailv2-content {
+            min-height: 100vh;
+
+            section.about {
+                .trip-info {
+                    td {
+                        font-size: 14px;
+                    }
+                }
+
+                .btn-book {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 50px;
+                    background: $myBlue;
+                    color: $notSoWhite;
+                    padding-top: 12px;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        background: $nightBlue;
+                    }
+                }
+            }
+
+            section.service {
+                width: 100%;
+                margin: 20px 0;
+                padding: 10px 10px;
+
+                .card {
+                    box-shadow: 0px 0px 10px black;
+                }
+
+                .card-body {
+                    // flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    .service-list {
+                        padding: 5px 10px;
+                        margin: 0px 0px;
+
+                        .service-icon {
+                            height: 60px;
+                        }
+
+                        .service-text {
+                            margin-left: 10px;
+
+                            .service-title {
+                                font-weight: 700;
+                                font-size: 1.2rem;
+                            }
+
+                            .service-desc {
+                                margin-top: -20px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* DETAILv2 PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    /* PACKAGES PAGE
+   GLOBAL BREAK */
+    //------------------------------
+
+    body {
+        header.hero-packages {
+            height: 100vh;
+            position: relative;
+
+            .owl-carousel {
+                height: 100%;
+                overflow: hidden;
+
+                .item {
+                    height: 100vh;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover !important;
+                        object-position: center center !important;
+                    }
+                }
+            }
+
+            .bg-x {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: rgba(#242424, 0.5) !important;
+                z-index: 2;
+            }
+
+            .quote {
+                position: absolute;
+                margin-top: 240px;
+                padding: 20px 0;
+                height: 100px;
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: 5;
+                color: $notSoWhite;
+
+                h1 {
+                    font-family: $secFont !important;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        main.packages-content {
+            min-height: 100vh;
+
+            section.search-bar {
+                margin-top: 20px;
+
+                .search-form {
+                    display: flex;
+
+                    .btnSearch {
+                        animation-delay: 0.3s;
+                        padding: 4px 10px;
+                        background: $myYellow;
+                        color: $notSoWhite;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            text-decoration: none;
+                            background: rgb(255, 115, 0);
+                            color: $notSoWhite;
+                        }
+                    }
+                }
+            }
+
+            section.travel-collection {
+                .travel-card {
+                    height: 380px;
+                    width: 260px;
+                    margin-bottom: 20px;
+
+                    .travel-card-content {
+                        .travel-location {
+                            // margin-bottom: 200px;
+                            color: $notSoWhite;
+
+                            h3 {
+                                font-size: 2rem;
+                                font-weight: 700;
+                            }
+
+                            h5 {
+                                font-size: 1.3rem;
+                                font-weight: 200;
+                            }
+                        }
+
+                        .travel-cta {
+                            margin-top: 55px !important;
+
+                            .btnKuning {
+                                font-size: 0.8rem;
+                                padding: 5px 10px;
+                            }
+                        }
+                    }
+                }
+
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap !important;
+            }
+        }
+    }
+
+    /* PACKAGES PAGE
+   GLOBAL BREAK */
+    //------------------------------
+
+    /* MAIL PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    body {
+        main.mail {
+            .header {
+                padding: 10px 0;
+                height: 80px;
+                text-align: center;
+                background: #f3f9fb;
+
+                img {
+                    height: 100% !important;
+                }
+            }
+
+            .payment {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+
+                .bank {
+                    flex-wrap: wrap;
+                    display: flex;
+                    margin: 10px 0;
+
+                    .bank-logo {
+                        margin-right: 20px;
+                    }
+
+                    .bank-desc {
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* MAIL PAGE
+   DESKTOP BREAK */
+    //------------------------------
+
+    //------------------------------
+    footer {
+        .col-sm-12 {
+            text-align: left;
+            padding: 0px 50px;
+            margin: 20px 0px;
+        }
+
+        position: relative;
+        bottom: 0;
+        margin-top: 300px;
+        width: 100%;
+        padding: 30px 0px;
+        padding-bottom: 0;
+
+        ol {
+            list-style: none;
+            margin: 0;
+            padding: 0px 5px;
+        }
+    }
+}
